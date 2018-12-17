@@ -1,0 +1,15 @@
+<hr>
+<button class="btn btn-primary" (click)="clickDetails()">Display Details</button>
+
+<p *ngIf="showParagraph">Trust no one</p>
+
+<p *ngFor="let item of testArray; index as i; trackBy: trackByFn" [ngClass]="{whiteOnBlue: i > 3}">{{ item }}</p>
+
+<!-- Instructor solution: -->
+<!-- If it is an array of numbers, you can do:  -->
+<!-- <div 
+  *ngFor="let item of testArray"
+  [ngStyle]="{backgroundColor: item >= 5 ? 'blue' : 'transparent'}"
+  [ngClass] ="{'white-text': item >=5}"
+  >{{ item }}</div> -->
+
