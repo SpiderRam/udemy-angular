@@ -2,17 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AppComponent } from './app.component';
-import { GameComponentComponent } from './game-component/game-component.component';
-import { OddComponent } from './odd/odd.component';
-import { EvenComponent } from './even/even.component';
+
+import { TaskFourComponent } from './task-four.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    GameComponentComponent,
-    OddComponent,
-    EvenComponent
+    TaskFourComponent,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +19,6 @@ import { EvenComponent } from './even/even.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [TaskFourComponent]
 })
 export class AppModule { }

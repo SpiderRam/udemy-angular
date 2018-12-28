@@ -1,16 +1,11 @@
 <div class="container">
-  <div class="row">
-    <h3>I'm in the App component</h3>
-    <hr>
-    <app-servers></app-servers>
-    <!-- Optional (see paired code in servers.component.ts): -->
-    <!-- <div app-servers></div> -->
-    <!-- Or: -->
-    <!-- <div class="app-servers"></div> -->
-    <!-- <app-task-two></app-task-two> -->
-  </div>
-  <div class="row">
-    <app-task-three></app-task-three>
+  <app-game-component (intervalFired)="onIntervalFired($event)"></app-game-component>
+  <div class="row justify-content-center" id="pDiv">
+    <div class="col-4">
+      <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+    </div>
+    <div class="col-4">
+      <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber" ></app-even>
+    </div>
   </div>
 </div>
-
