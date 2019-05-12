@@ -5,7 +5,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-servers',
   templateUrl: './servers.component.html',
-  styleUrls: ['./servers.component.css']
+  // styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
   private servers: {id: number, name: string, status: string}[] = [];
@@ -17,13 +17,13 @@ export class ServersComponent implements OnInit {
   }
 
   onReload() {
-    // This will work: 
+    // This will work:
     this.router.navigate(['/servers'], {relativeTo: this.route});
 
     // And so will this:
     // this.router.navigate(['servers']);
 
-    // But this will not: 
+    // But this will not:
     // this.router.navigate(['servers'], {relativeTo: this.route});
 
     // Relative vs. Absolute paths
