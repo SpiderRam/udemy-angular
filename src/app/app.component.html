@@ -1,16 +1,9 @@
 <div class="container">
+  <app-cockpit></app-cockpit>
+  <hr>
   <div class="row">
-    <h3>I'm in the App component</h3>
-    <hr>
-    <app-servers></app-servers>
-    <!-- Optional (see paired code in servers.component.ts): -->
-    <!-- <div app-servers></div> -->
-    <!-- Or: -->
-    <!-- <div class="app-servers"></div> -->
-    <!-- <app-task-two></app-task-two> -->
-  </div>
-  <div class="row">
-    <app-task-three></app-task-three>
+    <div class="col-xs-12">
+      <app-server-element *ngFor="let serverElement of serverElements" [srvElement]="serverElement"></app-server-element>
+    </div>
   </div>
 </div>
-

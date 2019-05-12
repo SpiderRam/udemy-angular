@@ -3,14 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  // You can add styling in the css file, or right here.
-  styles: [`
-    h3 {
-      border-bottom: 1px solid red;
-    }
-  `]
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  serverElements = [{type: 'server', name: 'TestServer', content: 'Just a test'}];
+  // newServerName = '';
+  // newServerContent = '';
 
 }
