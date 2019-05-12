@@ -2,8 +2,47 @@
   <app-cockpit></app-cockpit>
   <hr>
   <div class="row">
+<<<<<<< HEAD
     <div class="col-xs-12">
       <app-server-element *ngFor="let serverElement of serverElements" [srvElement]="serverElement"></app-server-element>
     </div>
   </div>
 </div>
+=======
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="nav-item"><a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+        <li role="presentation" class="nav-item"><a routerLink="/servers" class="nav-link" routerLinkActive="active">Servers</a></li>
+        <li role="presentation" class="nav-item"><a routerLink="/users" class="nav-link" routerLinkActive="active">Users</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+
+<!-- =============================================== -->
+<!-- This was a typo, that works, but not all the time -->
+<!-- =============================================== -->
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="nav-item"><a routerLink="/" class="nav-link" routerActive="active">Home</a></li>
+        <li role="presentation" class="nav-item"><a routerLink="/servers" class="nav-link" routerActive="active">Servers</a></li>
+        <li role="presentation" class="nav-item"><a routerLink="/users" class="nav-link" routerActive="active">Users</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div> -->
+>>>>>>> 903ad620143bdb5531fbe5332add2d9632cd99b7

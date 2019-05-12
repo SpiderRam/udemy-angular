@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-xs-12">
+    <p>Add new Servers or blueprints!</p>
+    <label>Server Name</label>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerName"> -->
+    <!-- Using #serverNameInput (local reference) is fine when 2 way data binding isn't necessary, -->
+    <!-- this variable is now available to every element of the HTML file, -->
+    <!-- and can be passed to the ts file by making it the argument of the onAddServer function below -->
+    <input type="text" class="form-control" #serverNameInput>
+    <label>Server Content</label>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent"> -->
+
+    <input 
+      type="text" 
+      class="form-control" 
+      #serverContentInput>
+    <br>
+    <button
+      class="btn btn-primary"
+      (click)="onAddServer(serverNameInput)">Add Server</button>
+    <button
+      class="btn btn-primary"
+      (click)="onAddBlueprint(serverNameInput)">Add Server Blueprint</button>
+  </div>
+</div>
